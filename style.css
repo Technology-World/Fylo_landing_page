@@ -10,14 +10,15 @@
     font-weight: 400;
     color: hsl(243, 87%, 12%);
 }
-main {
-    width: 90%;
-    margin: 50px auto;
-    max-width: 1440px;
+.top_layer{
+    width: 100%;
+    margin: 50px auto 150px;
 }
 .header {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
 }
 .header img{
     max-width: 50%;
@@ -42,7 +43,7 @@ main {
     margin: 50px auto;
     max-width: 1440px;
 }
-.article1, .article2 {
+.article1{
     width: 100%;
     margin: 90px auto;
     max-width: 50%;
@@ -54,8 +55,8 @@ h1 {
     width: 100%;
     font-weight: 700;
 }
-p {
-    font-size: 20px;
+.article1 p {
+    font-size: 21px;
     width: 90%;
     padding-bottom: 20px;
 }
@@ -70,13 +71,124 @@ p {
     padding: 15px 70px;
     border-radius: 3px;
 }
-.illustration-1, .illustration-2 {
+.article2 {
+    width: 100%;
+    margin: 150px auto 50px;
+    max-width: 60%;
+}
+.article2 p {
+    font-size: 20px;
+    width: 75%;
+    padding-bottom: 20px;
+}
+.illustration-1 {
     width: 50%; 
+}
+.illustration-2 {
+    width: 40%;
+    margin: 150px auto 50px;
 }
 .section_two img, .section_three .illustration-2 img {
     width: 100%;
 }
+.article2 a{
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+.article2 article {
+    width: 50%;
+    background-color: black;
+    border: 1px solid white;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.article2 article .p1{
+    font-size: 16px;
+    margin: 5px auto;
+    color: white;
+    line-height: 1.5em;
+    font-weight: 10;
+}
 .middle_layer {
-    background-image: url(/images/bg-curve-desktop.svg);
-    overlay: hsl(240, 75%, 98%);
+    margin: 50px auto;
+    background-image: url(./images/bg-curve-desktop.svg);
+    width: 100%;
+}
+.quote {
+    display: flex;
+    padding-left:50px ;
+    padding-bottom: 20px;
+    font-size: 6px;
+    width: 100%;
+}
+.quote_img {
+    border-radius: 100%;
+    width: 15%;
+    object-fit: contain;
+}
+.quote h3 {
+    color: green;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.down_layer {
+    display: inline-flex;
+    background-color:hsl(238, 22%, 44%);
+    max-width: 100%;
+    width: 100%;
+    padding: 80px;
+}
+.down_layer_section1 {
+    width: 70%;
+}
+.down_layer_section1 h1{
+    color: white;
+    font-size: 35px;
+}
+.down_layer_section1 p{
+    color: white;
+    font-size: 18px;
+    width: 65%;
+    line-height: 1.5em;
+}
+.down_layer_section2 {
+    width: 50%;
+    padding: auto 2px;
+    display: grid;
+    align-items: center;
+}
+.down_layer_section2 input {
+    padding: 13px 300px 13px 13px;
+    border-radius: 5px;
+    border: 0px;
+    width: 80%;
+    font-size: small;
+    
+}
+.down_layer_section2 button {
+    width: 30%;
+    padding: 10px;
+    background-color: hsl(224, 93%, 58%);
+    border: 0px;
+}
+footer {
+    background-color: hsl(243, 87%, 12%);
+}
+table {
+    width: 90%;
+    padding: 80px;
+    align-items: center;
+}
+td {
+    color: white;
+}
+tbody {
+    margin: 100px auto;
+}
+.footer_img {
+    filter: brightness(0);
+    filter: invert(2);
 }
