@@ -37,15 +37,16 @@ body {
 .top_layer2 {
   width: 50%;
 }
-.nav {
+/* .nav {
   width: 50%;
-}
+} */
 .nav ul {
   white-space: nowrap;
   text-align: end;
 }
 .nav li {
-  width: 17%;
+  width: auto;
+  padding-left: 60px;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -83,7 +84,6 @@ body {
   padding-bottom: 50px;
   background: linear-gradient(0deg, rgb(249, 248, 254), rgb(249, 248, 254)),
     url(./images/bg-curve-desktop.svg);
-  max-width: 100%;
 }
 .middle_layer {
   display: flex;
@@ -133,7 +133,7 @@ article {
   width: 100%;
 }
 .quote_img {
-  border-radius: 500%;
+  border-radius: 50%;
   margin-top: 10px;
   width: 30px;
   height: 30px;
@@ -158,10 +158,10 @@ article {
   align-items: center;
 }
 .bottom_layer1 {
-  width: 55%;
+  width: 60%;
 }
 .bottom_layer2 {
-  width: 45%;
+  width: 40%;
 }
 .bottom_layer h2 {
   color: white;
@@ -169,11 +169,11 @@ article {
 }
 .bottom_layer p {
   color: white;
-  font-size: 18px;
-  width: 75%;
+  font-size: 16px;
+  width: 65%;
   line-height: 1.5em;
 }
-.bottom_layer input {
+.bottom_layer2 input {
   border-radius: 5px;
   padding: 20px;
   border: 0px;
@@ -181,7 +181,7 @@ article {
   font-size: x-small;
   margin-bottom: 15px;
 }
-.bottom_layer button {
+.bottom_layer2 button {
   width: auto;
   padding: 15px 30px;
   background-color: hsl(224, 93%, 58%);
@@ -202,7 +202,7 @@ article {
 .footer_layer1 ul {
   display: inline-block;
   line-height: 2em;
-  width: 25%;
+  width: 20%;
   vertical-align: top;
   padding-left: 0px;
 }
@@ -213,23 +213,173 @@ article {
 .footer_layer li {
   list-style: none;
 }
+.footer_layer1 ul .li1 img {
+  padding-right: 20px;
+}
 .fa {
-    padding: 10px;
-    font-size: 10px;
-    width: 10px;
+  padding: 8px;
+  font-size: 13px;
+  width: 13px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
+
+  .nav li {
+    padding-left: 70px;
+  }
+  .top_layer {
+    flex-direction: column-reverse;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    border: 1px solid white;
-    /* filter: brightness(20); */
   }
-  .fa-facebook {
+  .top_layer2 {
+    width: 95%;
+  }
+  .top_layer1 {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .top_layer1 h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    /* width: 95%; */
+  }
+  .top_layer1 p {
+    font-size: 30px;
+    /* width: 90%; */
+  }
+  .top_layer1 input {
+    padding: 30px 165px 30px 30px;
+    margin: 10px;
+    width: -webkit-fill-available;
+    font-size: 25px;
+    border-radius: 5px;
+  }
+  .top_layer1 button {
+    background-color: hsl(224, 93%, 58%);
+    border: 0;
     color: white;
+    padding: 30px 70px;
+    border-radius: 5px;
+    width: -webkit-fill-available;
+    margin: 10px;
   }
-  .fa-twitter {
-    color: white;
+  .middle_parent {
+    background: linear-gradient(0deg, rgb(249, 248, 254), rgb(249, 248, 254)),
+      url(./images/bg-curve-mobile.svg);
+      
+      margin-top: 100px;
+      text-align: center;
   }
-  .fa-instagram {
-    color: white;
+  .middle_layer {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
   }
+  .middle_layer2 {
+    width: 100%;
+    margin: 150px auto;
+  }
+  .middle_layer1 {
+    width: 100%;
+  }
+  .middle_layer1 h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+  }
+  .middle_layer1 p {
+    font-size: 27px;
+    width: 100%;
+    text-align: justify;
+  }
+  .middle_layer1 a {
+    font-size: 25px;
+    line-height: 5em;
+}
+article {
+  width: 90%;
+  margin: 50px auto;
+}
+.middle_layer1 article p {
+  width: 90%;
+  font-size: 23px;
+  text-align: start;
+}
+.quote_img {
+  width: 50px;
+  height: 50px;
+}
+.quote h5 p {
+  line-height: 15px;
+  font-size: 15px;
+  width: 100%;
+}
+.bottom_parent {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.bottom_layer {
+  flex-direction: column;
+  text-align: center;
+}
+.bottom_layer1 {
+  width: 100%;
+}
+.bottom_layer h2 {
+  font-size: 35px;
+}
+.bottom_layer p {
+  font-size: 30px;
+  width: 95%;
+}
+.bottom_layer2 {
+  width: 100%;
+}
+.bottom_layer2 input {
+  padding: 25px;
+  width: 70%;
+  font-size: 20px;
+}
+.bottom_layer2 button {
+  width: 78%;
+  padding: 25px;
+  font-size: 20px;
+}
+.footer_img {
+  width: 60%;
+}
+.footer_layer1 ul {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+.footer_layer1 ul .li1 img {
+  padding-right: 40px;
+  width: 30px;
+}
+.social_media {
+  margin: auto;
+}
+.fa {
+  padding: 10px;
+  font-size: 28px;
+  margin: auto 5px;
+  width: 25px;
+}
+
+}
